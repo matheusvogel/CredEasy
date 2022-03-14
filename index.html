@@ -2,33 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-sacle=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Login</title>
+        <title>Login Creadeasy</title>
+        <style>
+          @font-face {
+            font-family: 'Tommy';
+            src: url('htmlcredeasy/MADE TOMMY Medium_PERSONAL USE');
+          }
+        </style>
     </head>
     <body>
         <div class="main-login">
-            <div class="left-login">
-                <h1>Faça login<br>E venha ser CredEasy</h1>
-                <img src="manage-money-animate.svg" class="left-login-image" alt="Money animação">
+            <form class="form-login">       
+              <h2 class="form-login-heading">LOGIN</h2>
+                <label for="e-mail">E-mail</label>
+                <input type="text" class="form-box" name="email" placeholder="Digite seu e-mail"/>
+                <label for="e-mail">Senha</label>
+                <input type="password" class="form-box" name="senha" placeholder="Digite sua senha"/>      
+            <div> 
+              <button class="btn-login" type="submit">Entrar</button>   
             </div>
-            <div class="right-login">
-                <div class="card-login">
-                    <h1>LOGIN</h1>
-                    <div class="textfield">
-                        <label for="e-mail">E-mail</label>
-                        <input type="text" name="e-mail" placeholder="E-mail">
-                    </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha">
-                </div>
-                <button class="btn-login">Login</button>
-                <div>
-                    <p class="register">Ainda nao tem uma conta?<a href="#"> Cadastre-se</a></p>
-                </div>
+            <div>
+                <p class="register">Não possui uma conta?<a href="cadastro.html"> <b>Cadastre-se</b></a></p>
             </div>
-        </div>
+            </form>
+          </div>
     </body>
 </html>
