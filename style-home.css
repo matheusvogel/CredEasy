@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(233deg, #f3b6c9 0%, #00978d 100%);
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+h2 {
+    display: inline;
+    text-align: right;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f180a4;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+
