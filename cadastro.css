@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(233deg, #f3b6c9 0%, #00978d 100%);
+    background-image: linear-gradient(233deg, #f180a4 0%, #00978d 100%);
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
@@ -24,7 +24,7 @@ body {
 h1 {
     text-align: center;
     padding: 15px 10px;
-    font-family: 'Tommy';
+    font-family: 'Open Sans', sans-serif;
     color: #ffff;
     margin-bottom: 4px;
 }
@@ -49,7 +49,7 @@ h1 {
 }
 
 .textbox > label {
-    font-family: 'Tommy';
+    font-family: 'Open Sans', sans-serif;
     padding: 2px;
     font-size: 16px;
 }
@@ -62,13 +62,13 @@ h1 {
     background-color: #00978d;
     color: #eee;
     font-size: 18px;
-    font-family: 'Tommy';
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     margin-top: 5px;
 }
 
 .register {
-    font-family: 'Tommy';
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 }
 
@@ -76,6 +76,6 @@ a {
     text-decoration: none;
     font-size: 15px;
     color: #f180a4;
-    font-family: 'Tommy';
+    font-family: 'Open Sans', sans-serif;
 }
 

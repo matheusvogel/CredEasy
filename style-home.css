@@ -6,13 +6,14 @@
 }
 
 header {
-    background-image: linear-gradient(233deg, #f3b6c9 0%, #00978d 100%);
+    background-image: linear-gradient(233deg, #096466 0%, #00978d 100%);
     background-repeat: no-repeat;
     padding: 50px 0;
 }
 
 h1 {
     color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .caixa {
@@ -31,11 +32,7 @@ nav {
 nav li {
     display: inline;
     margin: 0 0 0 15px;
-}
-
-h2 {
-    display: inline;
-    text-align: right;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav a {
@@ -52,4 +49,51 @@ nav a:hover {
     text-decoration: none;
 }
 
+.banner {
+    width: 100%;
+}
+
+.servicos {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.servicos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.4%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.servicos li:hover {
+    border-color: #f180a4;
+}
+
+.servicos li:active {
+    border-color: #f180a4;
+}
+
+.servicos li:hover h2 {
+    font-size: 31px;
+    color: #f180a4;
+}
+
+.servicos h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #00978d;
+}
+
+.servicos-descricao {
+    font-size: 18px;
+}
 

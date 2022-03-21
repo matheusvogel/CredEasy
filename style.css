@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(233deg, #f3b6c9 0%, #00978d 100%);
+  background-image: linear-gradient(233deg, #f180a4 0%, #00978d 100%);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -15,7 +15,8 @@ body {
   padding: 25px 25px 30px;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);  
+  border: 1px solid rgba(0,0,0,0.1); 
+  border-radius: 20px;
 }
 
 .form-login-heading {
@@ -25,7 +26,7 @@ body {
 h2 {
   text-align: center;
   font-size: 35px;
-  font-family: 'Tommy';
+  font-family: 'Open Sans', sans-serif;
   color: #00978d;
 }
 
@@ -39,12 +40,14 @@ h2 {
 input[type="text"] {
   margin-top: 5px;
 	margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input[type="password"] {
   margin-top: 5px;
   width: 350px;
 	margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .btn-login{
@@ -55,17 +58,18 @@ input[type="password"] {
   background-color: #00978d;
   color: #eee;
   font-size: 18px;
-  font-family: 'Tommy';
-  
+  font-family: 'Open Sans', sans-serif;
 }
 
   .register {
     font-size: 15px;
     margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
   text-decoration: none;
   font-size: 15px;
   color: #f180a4;
+  font-family: 'Open Sans', sans-serif;
 }
