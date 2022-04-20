@@ -1,53 +1,96 @@
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
+/******* caixa superior (menu) *******/
+
 header {
     background-image: linear-gradient(233deg, #096466 0%, #00978d 100%);
     background-repeat: no-repeat;
-    padding: 50px 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
 }
+
+nav {
+    align-items: center;
+
+}
+
+/******* Titulo em letra diferente *******/
 
 h1 {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
+    align-items: left;
+    margin-left: 5rem;
+    padding: 10px;
+    text-decoration: none;
+    font-style: italic;
 }
 
-.caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-}
-
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
-    top: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-nav a {
-    text-transform: uppercase;
+a {
     color: #ffffff;
-    font-weight: bold;
-    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    margin-left: 5rem;
+    padding: 10px;
     text-decoration: none;
+
 }
 
-nav a:hover {
-    color: #f180a4;
-    text-decoration: underline;
-    text-decoration: none;
+/***** Implementação da transição do botão menu *****/
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.5s;
 }
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+/***** Botão de menu escondido, apenas visível mobile *****/
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 36px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: none;
+}
+
+li:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/******* Início do conteudo main *******/
 
 .banner {
     width: 100%;
@@ -87,7 +130,7 @@ nav a:hover {
     color: #f180a4;
 }
 
-.servicos h2{
+.servicos h2 {
     font-size: 30px;
     font-weight: bold;
     color: #00978d;
@@ -97,3 +140,40 @@ nav a:hover {
     font-size: 18px;
 }
 
+/******* Configuração mobile *******/
+
+button:focus~ul {
+    height: 250px;
+}
+
+@media (max-width: 700px) {
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+ }

@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/cadastro.css">
-        <title>Cadastro</title>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;
-        700&family=Open+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
-    </head>
-
-    <header>
-        <h1>Registre-se</h1>
-    </header>
-    <body>
-        <div class="form-register">
-            <div class="card-register">
-                <div class="textbox">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" placeholder="Digite seu nome completo" required>
-                </div>
-                <div class="textbox">
-                    <label for="CPF">CPF</label>
-                    <input type="number" name="CPF" placeholder="xxxxxxxxx-xx" required>
-                </div>
-                <div class="textbox">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" name="endereco" placeholder="Rua, Número, Bairro, Cidade" required>
-                </div>
-                <div class="textbox">
-                    <label for="profissao">Profissão</label>
-                    <input type="text" name="profissao" placeholder="Informe sua profissão" required>
-                </div>
-                <div class="textbox">
-                    <label for="renda">Renda</label>
-                    <input type="tel" name="renda" placeholder=" Informe sua renda" required>
-                </div>
-                <div class="textbox">
-                    <label for="e-mail">E-mail</label>
-                    <input type="email" name="e-mail" placeholder="exemplo@dominio.com" required>
-                </div>
-                <div class="textbox">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Digite sua senha" required>
-                </div>
-                <button class="btn-register">Cadastrar</button>
-                <div>
-                    <p class="register">Já possui uma conta?<a href="../html/login.html"> <b>Faça login</b></a></p>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Criar conta CredEasy</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;
+    700&family=Open+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+<body>  
+    <main class="container flex flex--coluna flex--centro">
+        <div class="cadastro-cabecalho">
+            <h1 class="cabecalho__titulo">Crie sua conta</h1>
         </div>
-    </body>
+        <section class="cartao">
+            <h2 class="cartao__titulo">Complete seu cadastro</h2>
+            <form class="formulario flex flex--coluna">
+                <fieldset>
+                    <legend class="formulario__legenda">Informações básicas</legend>
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Nome e Sobrenome" minlength="4"
+                        maxlength="255"required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input name="senha" id="senha" class="input" type="password" placeholder="Senha" minlength="16" title="A senha deve conter 
+                        pelo menos 16 caracteres." required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="formulario__legenda">Informações pessoais</legend>
+                    
+                    <div class="input-container">
+                        <input name="cpf" id="cpf" class="input" type="text" placeholder="CPF"  autocomplete="off"
+                        maxlength="14" required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input name="telefone" id="telefone" class="input" type="text" placeholder="Telefone celular"
+                        autocomplete="off" minlength="15" maxlength="15 required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input name="renda" id="renda" class="input" type="text" placeholder="Renda"
+                        autocomplete="off" required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="formulario__legenda">Endereço</legend>
+                    <div class="input-container">
+                        <input name="rua" id="rua" class="input" type="text" placeholder="Rua" data-tipo="rua" maxlength="255"required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input name="numero" id="numero" class="input" type="text" placeholder="Número" maxlength="255" required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input name="bairro" id="bairro" class="input" type="text" placeholder="Bairro" maxlength="255" required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                    <div class="input-container">
+                        <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" maxlength="255" required>
+                        <span class="input-mensagem-erro"></span>
+                    </div>
+                </fieldset>
+                    <div>
+                        <p class="register">Já possui uma conta?<a href="../html/login.html"> <b>Faça seu login</b></a></p>
+                    </div>
+                <button class="botao">Cadastrar</a>
+            </form>
+        </section>
+    </main>
+    <script src="../js/mascaras.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="module"></script>
+</body>
 </html>
