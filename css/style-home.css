@@ -1,179 +1,45 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+.navbar-custom {
+     background-image: linear-gradient(233deg, #096466 0%, #00978d 100%);	
 }
 
-body {
-    margin: 0;
+.card-largura {
+    width: 18rem;
 }
 
-/******* caixa superior (menu) *******/
+.imagem-carrosel-1 {
+    object-fit: cover;
+    object-position: 0 40%;
+    height: 450px;
+}
 
-header {
+.imagem-carrosel-2 {
+    object-fit: cover;
+    object-position: 0 20%;
+    height: 450px;
+}
+
+.fonte-titulo {
+    font-family: 'Poppins', sans-serif;
+}
+
+.botao-cor-especial {
+    background-color: #00978d;
+    color: white;
+}
+ 
+.borda-cor-especial {
+    border-color: #f180a4;
+}
+
+.card-posicao-imagem {
+    object-fit: cover;
+    height: 200px;
+}
+
+.numeros {
+    color: #ec648f;
+}
+
+.footer-custom {
     background-image: linear-gradient(233deg, #096466 0%, #00978d 100%);
-    background-repeat: no-repeat;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
 }
-
-nav {
-    align-items: center;
-
-}
-
-/******* Titulo em letra diferente *******/
-
-h1 {
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    align-items: left;
-    margin-left: 5rem;
-    padding: 10px;
-    text-decoration: none;
-    font-style: italic;
-}
-
-a {
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    align-items: center;
-    margin-left: 5rem;
-    padding: 10px;
-    text-decoration: none;
-
-}
-
-/***** Implementação da transição do botão menu *****/
-
-ul {
-    list-style: none;
-    padding: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-
-nav,
-ul {
-    display: flex;
-    flex-direction: row;
-}
-
-li {
-    padding: 0 20px;
-}
-
-h1 {
-    margin: 0;
-    padding: 10px;
-}
-
-/***** Botão de menu escondido, apenas visível mobile *****/
-
-button {
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    font-size: 36px;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    display: none;
-}
-
-li:hover,
-h1:hover,
-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-/******* Início do conteudo main *******/
-
-.banner {
-    width: 100%;
-}
-
-.servicos {
-    width: 90%;
-    margin: 0 auto;
-    padding: 50px 0;
-    margin-top: 50px;
-}
-
-.servicos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.4%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
-    cursor: pointer;
-}
-
-.servicos li:hover {
-    border-color: #f180a4;
-}
-
-.servicos li:active {
-    border-color: #f180a4;
-}
-
-.servicos li:hover h2 {
-    font-size: 31px;
-    color: #f180a4;
-}
-
-.servicos h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #00978d;
-}
-
-.servicos-descricao {
-    font-size: 18px;
-}
-
-/******* Configuração mobile *******/
-
-button:focus~ul {
-    height: 250px;
-}
-
-@media (max-width: 700px) {
-
-    nav,
-    ul {
-        flex-direction: column;
-    }
-
-    ul {
-        text-align: center;
-        margin: 0;
-        height: 0;
-    }
-
-    nav {
-        padding: 0;
-        align-items: flex-start;
-    }
-
-    h1 {
-        margin: 10px;
-    }
-
-    button {
-        display: flex;
-    }
-
-    li,
-    ul {
-        width: 100%;
-    }
- }
