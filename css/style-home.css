@@ -85,13 +85,14 @@
 
 .numeros {
     color: #ec648f;
+    font-size: 2.3rem;
 }
 
 .footer-custom {
     background-image: linear-gradient(233deg, #096466 0%, #00978d 100%);
 }
 
-.icones-redes {
-    object-fit: cover;
-    height: 32px;
+.icones-redes:hover {
+    color: white;
 }
+
